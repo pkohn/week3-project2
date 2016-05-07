@@ -119,22 +119,77 @@ convertToFar(celTemp);
 //    or from Celsius to Fahrenheit. To keep it simple, instruct them to use "F to C" or "C to F".
 //    Alert them with an error if they do not follow the rules.
 
+console.log('\nQuestion 7');
+
+var Temp = prompt ("What's the temp?");
+var FC = prompt ("F to C? Enter 1! or C to F? Enter 2");
+
+FC = parseFloat(FC);
+
+if (FC === 2){
+	var toFAR = 1;
+} 
+else {
+	var toFAR = 0;
+}
+
+
+Temp = parseFloat(Temp);
+
+var convertDegree = function (Temp, FAR){
+
+if(toFAR){
+		var farTemp = (9/5)*Temp + 32;
+		console.log("That is " + farTemp + " degrees Farenheit!");
+	} 
+	
+else { //convertToCel
+		var celTemp = (5/9)*Temp - 32;
+		console.log("That is " + celTemp + " degrees Celcius!");
+	}
+	
+};
+
+convertDegree(Temp, toFAR);
+
 // 8. Write a function countBs() that takes a string as its only argument and returns
 //    a number that indicates how many uppercase “B” characters are in the string.
 //    HINT: Google charAt()
 
+console.log('\nQuestion 8');
+
 // 9. Write a function called countChars() that behaves like countBs(), except it takes a
 //    second argument that indicates what character is to be counted.
 
+console.log('\nQuestion 9');
+
 // 10. Declare a function called ohZero that replaces all of the o's in a string with 0's.
 
+console.log('\nQuestion 10');
+
 // 11. Write a function that prints out the entire "99 Bottles of Beer on the Wall" song lyrics.
+
+
+console.log('\nQuestion 11');
+
+var i = 99;
+
+var lyrics = function (song, i){
+	
+	for (i=99; i > 0; i--){
+		
+		console.log(i + "bottles of beer on the wall, " + i + " bottles of beer...take one down, pass it around ..." + (i-1) + "bottles of beer on the wall.");
+	}
+};
+
 
 // 12. Create a 'Guessing Game'. The game starts by picking a random number.
 //    It then prompts the user to guess the number. If the user's number is lower/higher,
 //    it will prompt the user to enter another guess and tell the user if the guess was
 //    too high or too low. This continues until the correct guess is entered.
 //    When the correct guess is entered the user is given a success message with the correct number.
+
+console.log('\nQuestion 12');
 
 // 13. http://games.usvsth3m.com/javascript-under-pressure/
 //     Have fun with these! Get as far as you can and record your progress and time. We'll try this again in a few weeks!
