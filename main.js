@@ -224,10 +224,11 @@ var lyrics = function (i){
 	
 	for (i=99; i > 0; i--){
 		
-		console.log(i + "bottles of beer on the wall, " + i + " bottles of beer...take one down, pass it around ..." + (i-1) + "bottles of beer on the wall.");
+		console.log(i + " bottles of beer on the wall, " + i + " bottles of beer...take one down, pass it around ..." + (i-1) + " bottles of beer on the wall.");
 	}
 };
 
+lyrics(99);
 
 // 12. Create a 'Guessing Game'. The game starts by picking a random number.
 //    It then prompts the user to guess the number. If the user's number is lower/higher,
