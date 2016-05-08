@@ -7,8 +7,12 @@ console.log('\nQuestion 1');
 
 var minimum = function(num1, num2){
 	
-	console.log(Math.min(num1,num2));
-	return(Math.min(num1,num2));
+	if (num1 < num2){
+		console.log(num1);
+	} 
+	else {
+		console.log(num2);
+	}
 
 	
 };
@@ -156,25 +160,67 @@ convertDegree(Temp, toFAR);
 //    a number that indicates how many uppercase “B” characters are in the string.
 //    HINT: Google charAt()
 
+var countBs = function (myString, targetChar){
+	
+	var count = 0;
+	
+	for (i = 0; i < myString.length; i++){
+		
+		if (myString.charAt(i) === targetChar){
+			count++;
+		}
+	}
+	console.log(count);
+};
+
+
 console.log('\nQuestion 8');
+
+var myString = 'B2bbbbBB';
+var targetChar = 'B';
+countBs (myString, targetChar);
 
 // 9. Write a function called countChars() that behaves like countBs(), except it takes a
 //    second argument that indicates what character is to be counted.
 
+
+
 console.log('\nQuestion 9');
+console.log("WOOHOO, that is what I aready did in #8");
 
 // 10. Declare a function called ohZero that replaces all of the o's in a string with 0's.
 
+var ohZero = function (myString, findIt, replaceIt){
+	
+	var myNewString = '';
+	
+	for (i = 0; i < myString.length; i++){
+		
+		if (myString.charAt(i) === findIt){
+			myNewString += replaceIt;
+		} else {
+			myNewString += myString[i];
+		}
+	}
+	console.log(myNewString);
+};
+
 console.log('\nQuestion 10');
 
-// 11. Write a function that prints out the entire "99 Bottles of Beer on the Wall" song lyrics.
+var myString = '5555oooos';
+var findIt = 'o';
+var replaceIt = '0';
 
+ohZero(myString, findIt, replaceIt);
+
+
+// 11. Write a function that prints out the entire "99 Bottles of Beer on the Wall" song lyrics.
 
 console.log('\nQuestion 11');
 
 var i = 99;
 
-var lyrics = function (song, i){
+var lyrics = function (i){
 	
 	for (i=99; i > 0; i--){
 		
