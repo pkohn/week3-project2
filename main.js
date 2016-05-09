@@ -149,7 +149,7 @@ if(toFAR){
 	} 
 	
 else { //convertToCel
-		var celTemp = (5/9)*Temp - 32;
+		var celTemp = (5/9)*(Temp - 32);
 		console.log("That is " + celTemp + " degrees Celcius!");
 		console.log("Which is " + Temp + " degrees Farenheit!");
 	}
