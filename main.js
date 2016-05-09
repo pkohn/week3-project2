@@ -145,11 +145,13 @@ var convertDegree = function (Temp, FAR){
 if(toFAR){
 		var farTemp = (9/5)*Temp + 32;
 		console.log("That is " + farTemp + " degrees Farenheit!");
+		console.log("Which is " + Temp + " degrees Celsius!");
 	} 
 	
 else { //convertToCel
 		var celTemp = (5/9)*Temp - 32;
 		console.log("That is " + celTemp + " degrees Celcius!");
+		console.log("Which is " + Temp + " degrees Farenheit!");
 	}
 	
 };
@@ -217,8 +219,6 @@ ohZero(myString, findIt, replaceIt);
 // 11. Write a function that prints out the entire "99 Bottles of Beer on the Wall" song lyrics.
 
 console.log('\nQuestion 11');
-
-var i = 99;
 
 var lyrics = function (i){
 	
