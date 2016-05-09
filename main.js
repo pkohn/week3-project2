@@ -238,5 +238,37 @@ lyrics(99);
 
 console.log('\nQuestion 12');
 
+var upperNum = prompt ("What's the upper end of the range?");
+
+var guess = ("OK I've got a number, what's your guess?" "Choose a number between 0 and " + upperNum);
+
+var compNum = math.random()*upperNum;
+
+console.log("OK, spoiler alert, the number I picked is " + compNum);
+
+if (guess === compNum){
+	
+	console.log("Good job, you guessed it!");
+	
+} else{
+
+	while (guess != compNum){
+	
+	if (guess > compNum){
+		
+		guess = prompt("Too high, guess again!");
+		
+	} else{
+		
+		guess = prompt("Too low, guess again!");
+		
+	}
+	
+	}
+	
+}
+
+
+
 // 13. http://games.usvsth3m.com/javascript-under-pressure/
 //     Have fun with these! Get as far as you can and record your progress and time. We'll try this again in a few weeks!
