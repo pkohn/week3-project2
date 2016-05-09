@@ -236,19 +236,26 @@ lyrics(99);
 //    too high or too low. This continues until the correct guess is entered.
 //    When the correct guess is entered the user is given a success message with the correct number.
 
+// 12. Create a 'Guessing Game'. The game starts by picking a random number.
+//    It then prompts the user to guess the number. If the user's number is lower/higher,
+//    it will prompt the user to enter another guess and tell the user if the guess was
+//    too high or too low. This continues until the correct guess is entered.
+//    When the correct guess is entered the user is given a success message with the correct number.
+
 console.log('\nQuestion 12');
 
 var upperNum = prompt ("What's the upper end of the range?");
 
-var guess = ("OK I've got a number, what's your guess?" "Choose a number between 0 and " + upperNum);
+var compNum = Math.round((Math.random()*upperNum));
 
-var compNum = math.random()*upperNum;
+//alert("OK, spoiler alert, the number I picked is " + compNum);
 
-console.log("OK, spoiler alert, the number I picked is " + compNum);
+var guess = prompt("OK I've got a number, what's your guess? Choose a number between 0 and " + upperNum);
+
 
 if (guess === compNum){
 	
-	console.log("Good job, you guessed it!");
+	alert("Good job, you guessed it! It was " + compNum);
 	
 } else{
 
@@ -256,18 +263,24 @@ if (guess === compNum){
 	
 	if (guess > compNum){
 		
+		console.log(guess);
 		guess = prompt("Too high, guess again!");
 		
 	} else{
 		
+		console.log(guess);
 		guess = prompt("Too low, guess again!");
 		
 	}
 	
 	}
 	
+	alert("Good job, you guessed it! It was " + compNum);
+	
 }
 
+
+console.log(compNum);
 
 
 // 13. http://games.usvsth3m.com/javascript-under-pressure/
