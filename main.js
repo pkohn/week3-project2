@@ -244,7 +244,7 @@ lyrics(99);
 
 console.log('\nQuestion 12');
 
-var upperNum = prompt ("What's the upper end of the range?");
+var upperNum = parseInt(prompt ("What's the upper end of the range?"));
 
 var compNum = Math.round((Math.random()*upperNum));
 
