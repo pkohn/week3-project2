@@ -128,6 +128,21 @@ console.log('\nQuestion 7');
 var Temp = prompt ("What's the temp?");
 var FC = prompt ("F to C? Enter 1! or C to F? Enter 2");
 
+var goodChoice = 0;
+
+if (parseFloat(FC) === 2 || parseFloat(FC) === 1){
+	goodChoice = 1;
+}
+
+while (goodChoice != 1){
+
+	FC = prompt ("F to C? Enter 1! or C to F? Enter 2");	
+	
+	if (parseFloat(FC) === 2 || parseFloat(FC) === 1){
+		goodChoice = 1;
+	}
+}
+
 FC = parseFloat(FC);
 
 if (FC === 2){
